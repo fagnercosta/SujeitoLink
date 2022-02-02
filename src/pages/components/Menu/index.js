@@ -1,6 +1,6 @@
 import './menu.css';
 import { BsYoutube, BsInstagram } from 'react-icons/bs';
-import { Links, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 function Menu() {
