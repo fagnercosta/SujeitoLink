@@ -13,7 +13,7 @@ function Menu() {
             <a className="social" href="https://www.instagram.com/sujeitoprogramador">
                 <BsInstagram size={24} color="#FFF"></BsInstagram>
             </a>
-            <Link className="menu-item" to="/links">Meus Links</Link>
+            <Link className="menu-item" to="/linkss">Meus Links</Link>
         </div>
     );
 }
