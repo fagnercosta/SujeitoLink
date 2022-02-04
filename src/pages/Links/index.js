@@ -13,7 +13,6 @@ function Links() {
     const [showModal, setShowModal] = useState(false);
 
     const [emptyList, setEmptyList] = useState(false);
-    const [message, setMessage] = useState(false);
 
 
     useEffect(() => {
@@ -26,12 +25,6 @@ function Links() {
 
             setMyLinks(result);
 
-            if (message) {
-                setInterval(() => {
-                    setMessage(false);
-                }, 300)
-            }
-
         }
 
         loadLinks();
@@ -40,7 +33,6 @@ function Links() {
     function handleOpenLink(link) {
         setData(link)
         setShowModal(true)
-        setMessage(false)
 
     }
 
@@ -49,7 +41,6 @@ function Links() {
         if (result.length === 0) {
             setEmptyList(true);
             setShowModal(false);
-            setMessage(false);
         }
 
         setMyLinks(result);
@@ -87,16 +78,10 @@ function Links() {
                 </div>
             ))}
 
-            {message && (
-                <Alert></Alert>
-
-
-            )}
 
             {showModal && (
                 <LinkItem
                     closeModal={() => setShowModal(false)}
-                    handleAltert={() => setMessage(true)}
                     content={data}
                 />
 

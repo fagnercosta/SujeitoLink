@@ -1,14 +1,11 @@
 import './link-item.css';
 import { FiX, FiClipboard } from 'react-icons/fi';
 
-export default function LinkItem({ closeModal, handleAltert, content }) {
+export default function LinkItem({ closeModal, content }) {
 
     async function copyLink() {
-        handleAltert(true)
 
         await navigator.clipboard.writeText(content.link);
-
-
 
     }
 
