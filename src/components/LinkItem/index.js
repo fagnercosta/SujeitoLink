@@ -1,14 +1,22 @@
 import './link-item.css';
-import { FiX, FiClipboard } from 'react-icons/fi'
+import { FiX, FiClipboard } from 'react-icons/fi';
 
-export default function LinkItem({ closeModal, content }) {
+import Alert from '../Alert'
+
+export default function LinkItem({ closeModal, handleAltert, content }) {
 
     async function copyLink() {
+        handleAltert(true)
+
         await navigator.clipboard.writeText(content.link);
+
+
+
     }
 
     return (
         <div className="modal-container">
+
             <div className="modal-header">
                 <h2>Link Encurtado</h2>
                 <button onClick={closeModal}>
