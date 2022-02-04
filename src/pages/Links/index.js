@@ -4,7 +4,7 @@ import { FiArrowLeft, FiLink, FiTrash, FiAlertTriangle } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { getLinks, deleteLink } from '../../services/storeLinks'
 import LinkItem from '../../components/LinkItem';
-import Alert from '../../components/Alert';
+
 
 function Links() {
 
