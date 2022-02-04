@@ -1,8 +1,6 @@
 import './link-item.css';
 import { FiX, FiClipboard } from 'react-icons/fi';
 
-import Alert from '../Alert'
-
 export default function LinkItem({ closeModal, handleAltert, content }) {
 
     async function copyLink() {
