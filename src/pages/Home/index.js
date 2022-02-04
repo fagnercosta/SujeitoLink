@@ -7,7 +7,7 @@ import Menu from '../../components/Menu';
 import LinkItem from '../../components/LinkItem';
 
 import api from '../../services/api';
-import { saveLink, getLinks } from '../../services/storeLinks';
+import { saveLink } from '../../services/storeLinks';
 function Home() {
 
     const [link, setLink] = useState('');
